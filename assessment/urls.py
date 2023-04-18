@@ -15,7 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from assessment import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('submit_json/', views.submit_json),
+    path('get_object_by_id/', views.get_object_by_id),
+    path('get_object_by_data/', views.get_object_by_data),
 ]

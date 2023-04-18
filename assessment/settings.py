@@ -44,6 +44,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django_extensions',
+    'rest_framework',
+    'assessment'
 ]
 
 MIDDLEWARE = [
@@ -79,15 +81,15 @@ WSGI_APPLICATION = 'assessment.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
-db_config = urlparse(os.getenv('DATABASE_URI'))
+#db_config = urlparse(os.getenv('DATABASE_URI'))
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': db_config.path[1:],
-        'HOST': db_config.hostname,
-        'POST': db_config.port,
-        'USER': db_config.username,
-        'PASSWORD': db_config.password
+        'NAME': 'bb_db',
+        'HOST': 'localhost',
+        'POST': '5432',
+        'USER': 'postgres',
+        'PASSWORD': 'testpassword'
     }
 }
 
