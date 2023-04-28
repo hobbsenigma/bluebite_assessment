@@ -1,13 +1,3 @@
-Andrew notes:
-
-Time spent:
-I spent a lot of time trying to get Docker and Pipenv working, and finally gave up on that approach.  I spent around 2 hours on the actual assignment (without effective debugging) before changing my approach.  After changing my approach, and installing postgres, I was able to finish the assignment in about 4 additional hours.
-
-Additional work considered (not implemented):
-1. Make saving data to the database asynchronous to avoid database writes becoming a bottleneck.
-2. Consider streaming responses for retrieval endpoints, in case of large result sets.
-3. Remove database credentials from settings file.
-
 # Blue Bite Assessment
 
 ## Introduction
